@@ -1,0 +1,32 @@
+{
+  "name": "api1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon",
+    "test": "jest",
+    "test:cov": "yarn test --coverage",
+    "test:mut": "stryker run"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "neverthrow": "^4.2.2"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^5.2.2",
+    "@stryker-mutator/jest-runner": "^5.2.2",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.8",
+    "jest": "^27.0.6",
+    "jest-junit": "^12.2.0",
+    "msw": "^0.33.2",
+    "nodemon": "^2.0.12",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}

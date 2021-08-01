@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="18" failures="0" errors="0" time="9.436">
+  <testsuite name="corsMiddlware function" errors="0" failures="0" skipped="0" timestamp="2021-08-01T17:34:38" time="5.405" tests="1">
+    <testcase classname="corsMiddlware function should set headers and call next" name="corsMiddlware function should set headers and call next" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="loggerMiddlware function" errors="0" failures="0" skipped="0" timestamp="2021-08-01T17:34:38" time="5.43" tests="1">
+    <testcase classname="loggerMiddlware function should log url and method" name="loggerMiddlware function should log url and method" time="0.012">
+    </testcase>
+  </testsuite>
+  <testsuite name="getUsersFromDB function" errors="0" failures="0" skipped="0" timestamp="2021-08-01T17:34:38" time="5.663" tests="2">
+    <testcase classname="getUsersFromDB function should read users from the db and return users" name="getUsersFromDB function should read users from the db and return users" time="0.012">
+    </testcase>
+    <testcase classname="getUsersFromDB function should return an err result" name="getUsersFromDB function should return an err result" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="authenticationMiddlware function" errors="0" failures="0" skipped="0" timestamp="2021-08-01T17:34:38" time="5.757" tests="2">
+    <testcase classname="authenticationMiddlware function should respond with a 400 error" name="authenticationMiddlware function should respond with a 400 error" time="0.003">
+    </testcase>
+    <testcase classname="authenticationMiddlware function should just call next" name="authenticationMiddlware function should just call next" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="handleHome function" errors="0" failures="0" skipped="0" timestamp="2021-08-01T17:34:38" time="5.795" tests="1">
+    <testcase classname="handleHome function should return hello world" name="handleHome function should return hello world" time="0.006">
+    </testcase>
+  </testsuite>
+  <testsuite name="handleUsers function" errors="0" failures="0" skipped="0" timestamp="2021-08-01T17:34:38" time="5.857" tests="2">
+    <testcase classname="handleUsers function should respond with users" name="handleUsers function should respond with users" time="0.004">
+    </testcase>
+    <testcase classname="handleUsers function should respond with a 500" name="handleUsers function should respond with a 500" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="makeHttpRequest function" errors="0" failures="0" skipped="0" timestamp="2021-08-01T17:34:38" time="6.321" tests="9">
+    <testcase classname="makeHttpRequest function should perform a GET request" name="makeHttpRequest function should perform a GET request" time="0.017">
+    </testcase>
+    <testcase classname="makeHttpRequest function should be a resolved promise" name="makeHttpRequest function should be a resolved promise" time="0.008">
+    </testcase>
+    <testcase classname="makeHttpRequest function should perform a GET request and handle Bad Status" name="makeHttpRequest function should perform a GET request and handle Bad Status" time="0.015">
+    </testcase>
+    <testcase classname="makeHttpRequest function should handle Bad Config" name="makeHttpRequest function should handle Bad Config" time="0">
+    </testcase>
+    <testcase classname="makeHttpRequest function should perform a POST request" name="makeHttpRequest function should perform a POST request" time="0.016">
+    </testcase>
+    <testcase classname="makeHttpRequest function should perform a GET request, returning a string" name="makeHttpRequest function should perform a GET request, returning a string" time="0.015">
+    </testcase>
+    <testcase classname="makeHttpRequest function should perform a GET request and handle Bad Server" name="makeHttpRequest function should perform a GET request and handle Bad Server" time="0.003">
+    </testcase>
+    <testcase classname="makeHttpRequest function should reject a promise" name="makeHttpRequest function should reject a promise" time="0.003">
+    </testcase>
+    <testcase classname="makeHttpError function should handle no-errors, edge case" name="makeHttpError function should handle no-errors, edge case" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
