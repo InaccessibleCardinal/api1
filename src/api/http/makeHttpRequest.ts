@@ -2,7 +2,7 @@ import { IncomingMessage, RequestOptions } from 'http';
 import { ResultAsync } from 'neverthrow';
 import { request } from 'https';
 
-type HttpOptions = RequestOptions & { data?: string };
+type HttpOptions = RequestOptions & { data?: string; };
 
 enum Methods {
   DELETE = 'DELETE',
@@ -20,7 +20,7 @@ function tryParse(str: string): any {
   }
 }
 
-function checkIsConfigValid(config: HttpOptions): boolean {
+export function checkIsConfigValid(config: HttpOptions): boolean {
   return (
     !!Object.values(Methods).includes(config.method as Methods) &&
     !!config.hostname &&
@@ -28,7 +28,7 @@ function checkIsConfigValid(config: HttpOptions): boolean {
   );
 }
 
-function checkIsBadStatus(statusCode: number | undefined) {
+export function checkIsBadStatus(statusCode: number | undefined) {
   return Number(statusCode) >= 400;
 }
 

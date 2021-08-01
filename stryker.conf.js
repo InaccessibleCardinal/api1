@@ -7,5 +7,12 @@ module.exports = {
   reporters: ['html', 'clear-text', 'progress'],
   testRunner: 'jest',
   coverageAnalysis: 'perTest',
-  ignorePatterns: ['src/api/middleware/index.ts', 'src/index.ts'],
+  mutate: [
+    './src/**/*.ts',
+    '!./**/*.spec.ts',
+    '!./src/api/middleware/index.ts',
+    '!./src/index.ts',
+    '!./**/__mocks__/*',
+    '!./src/api/routes/index.ts'
+  ],
 };

@@ -15,6 +15,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts',
     '!src/index.ts',
+    '!src/api/routes/index.ts',
     '!src/api/middleware/index.ts',
     '!src/api/utils/readFromDb.ts',
   ],
@@ -26,5 +27,5 @@ module.exports = {
       lines: 100,
     },
   },
-  // setupFiles: ['./jest.setup-file.ts'],
+  setupFiles: ["<rootDir>/setupTests.js"]
 };

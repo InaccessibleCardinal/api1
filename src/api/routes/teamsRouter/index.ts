@@ -1,6 +1,6 @@
 import { Router, Request, Response } from 'express';
 import Routes from '../../types/Routes';
-import getTeam from '../../services/usersService/teams-service';
+import getTeam from '../../services/teams-service';
 
 const teamsRouter = Router();
 

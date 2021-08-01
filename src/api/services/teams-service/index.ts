@@ -1,6 +1,6 @@
 import { err, ok, Result } from 'neverthrow';
-import makeHttpRequest from '../../../http/makeHttpRequest';
-import { Team, Player } from '../../../types/Teams';
+import makeHttpRequest from '../../http/makeHttpRequest';
+import { Team, Player } from '../../types/Teams';
 
 const { TEAMS_HOST, TEAMS_PATH } = process.env;
 
